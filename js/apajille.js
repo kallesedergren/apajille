@@ -1,14 +1,13 @@
 $(document).ready(function() {
-    $(".openbutton").click(function() {
-        $(".sidenav").css("width", "250px");
-        $(".closebutton").show();
-        $(".openbutton").text("");
-    });
-    
-    $(".closebutton").click(function() {
-        $(".sidenav").css("width", "0px");
-        $(".closebutton").hide();
-        $(".openbutton").text("☰");
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $("#testi2").show();
+        });
+    $("#testi2").click(function(e) {
+       $("#testi2").hide();
+        $("#testi2").css("display", "none");
+       $("#wrapper").toggleClass("toggled");
     });
 });
 

@@ -2,8 +2,9 @@ $(document).ready(function() {
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
-        $("#testi2").show();
+        $("#testi2").toggle(300);
         });
+    
     $("#testi2").click(function(e) {
        $("#testi2").hide();
         $("#testi2").css("display", "none");

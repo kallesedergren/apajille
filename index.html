@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Apajille</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
     <link href="css/apajille-styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,49 +19,30 @@
     <![endif]-->
     </head>
     <body>
-    <div id="map"></div>
-    <div id="wrapper">
-        
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" id="testi2"></span>
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <p href="#"id="testi">
-                        Apajille <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" id="menu-toggle"></span>
-                    </p>
-                <li class="sidebar-brand">
-                    
-                </li>
-                <li>
+        <div class="content">
+            <div id="sidenavHolder">
+                <div id="mySidenav" class="sidenavnobs">
+                    <a id="otsikko">Apajille</a><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+                    <br><br><br><br>
                     <a href="#">Etusivu</a>
-                </li>
-                <li>
                     <a href="#">Keskustelupalsta</a>
-                </li>
-                <li>
+                    <br><br><br><br>
                     <a href="#">Kirjaudu sisään</a>
-                </li>
-                <li>
                     <a href="#">Rekisteröidy</a>
-                </li>
-            </ul>
-        </div>
-        <form class="navbar-form navbar-left" role="search" id="userSearch">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+                </div>
+            <span id="openButton" onclick="openNav()">☰</span>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <!-- /#sidebar-wrapper -->
-        <div id="section">
-            
+            <!--<div class="pageContent">
+                <div class="searchBar"></div>
+                <div id="map"></div>
+            </div> -->
         </div>
-
         
-    </div>
-    
         
-
+        
+        
+        
+        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-3.1.1.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,18 +1,17 @@
-$(document).ready(function() {
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-        $("#testi2").toggle(300);
-        });
-    
-    $("#testi2").click(function(e) {
-       $("#testi2").hide();
-        $("#testi2").css("display", "none");
-       $("#wrapper").toggleClass("toggled");
-    });
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+/*
+$( document ).ready(function() {
+    console.log( "ready!" );
 });
-
-
 
 // this will be called from html
 function getLocation() {
@@ -85,5 +84,5 @@ function handleError(error) {
   }
 }
 
-
+*/
 

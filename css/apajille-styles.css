@@ -45,7 +45,7 @@ body {
     font-weight: 1000;
 }
 #ilmoitukset {
-    float:right;
+    float:left;
     margin-top:15px;
     width:80px;
     padding:5px;
@@ -64,7 +64,8 @@ body {
 #ilmoituksetdiv {
     width:300px;
     height:200px;
-    margin-left:-100px;
+    margin-left:95px;
+    margin-top:15px;
     overflow: hidden;
     position:absolute;
     z-index:1;

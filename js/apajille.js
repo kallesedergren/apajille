@@ -1,16 +1,58 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-/*
-$( document ).ready(function() {
+$(document).ready(function() {
     console.log( "ready!" );
+    
+    $(".openbtn").click(function() {
+        $("#mySidenav").css("width", "250px"); 
+    });
+    
+    $(".closebtn").click(function() {
+        $("#mySidenav").css("width", "0px"); 
+    });
+    
+    $("#usrsrc").click(function(e) {
+        $(this).closest('form').find("input[type=text], textarea").val("");
+    });
+    
+    $("#kalapaikkatoggle").click(function() {
+        $("#kalalaji").toggle(); 
+    });
+    
+    $("#maakuntatoggle").click(function() {
+        $("#maakunta").toggle(); 
+    });
+    
+    $(".dropdown").click(function(e) {
+        $(".dropdown-menu").toggle(); 
+    });
+    
+    $('.dropdown-menu').click(function(event){
+     event.stopPropagation();
+    });
+    
+    $("#kalapaikkatoggle, #maakuntatoggle").mouseenter(function() {
+        $(this).css("color", "red"); 
+    });
+    $("#kalapaikkatoggle, #maakuntatoggle").mouseleave(function() {
+        $(this).css("color", "black"); 
+    });
+    
+    $("#ilmoitukset").click(function() {
+        $("#ilmoituksetdiv").toggle(); 
+    });
+    
+    $("#logout").click(function() {
+        $("#logoutconfirm, #logouty, #logoutn").show();
+    });
+    $("#logoutn").click(function() {
+        $("#logoutconfirm, #logouty, #logoutn").hide(); 
+    });
+    
+    $("#salas, #nm, #sposti, #pk").click(function(e) {
+         $(this).val("");
+    });
+    $("#muokkaus, #peruuta").click(function() {
+        $("#muokkausdiv").toggle();
+    });
 });
 
 // this will be called from html
@@ -84,5 +126,5 @@ function handleError(error) {
   }
 }
 
-*/
+
 

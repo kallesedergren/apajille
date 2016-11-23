@@ -4,9 +4,14 @@ body {
     overflow-x: hidden;
     background:#f6f6f6;
 }
+/* Navbar */
 #sidenavHolder {
     width:15%;
     height:100%;
+}
+#logo {
+    width:100px;
+    
 }
 #otsikko {
     margin-top:-50px;
@@ -24,6 +29,7 @@ body {
 .closebtn {
     cursor:pointer;
 }
+/* Hakuosio */
 .searchBar {
     margin-left:250px;
     padding:5px;
@@ -79,6 +85,7 @@ body {
 #ilmoituksetdiv ul {
     text-align:left;
 }
+/* Uloskirjaus */
 #logout {
     cursor:pointer;
     text-decoration: underline;
@@ -91,13 +98,13 @@ body {
     cursor:pointer;
     text-decoration: underline;
 }
-
+/* */
 #map {
     margin-top:70px;
     border: solid 1px grey;
     width:60%;
     height:500px;
-    margin-left:250px;
+    margin-left:255px;
 }
 /* Asetukset osio */
 #asetukset {
@@ -138,6 +145,7 @@ body {
     margin-left:;
     margin-top:20px;
 }
+/* Asetukset */
 /* The side navigation menu */
 .sidenavnobs {
     height: 100%; /* 100% Full-height */
@@ -145,7 +153,7 @@ body {
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
-    background-color: #f6f6f6; /* Black*/
+    background-color: black; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -156,7 +164,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: black;
+    color: white;
     display: block;
     transition: 0.3s
 }

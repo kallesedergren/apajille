@@ -33,67 +33,93 @@
                 </div>
             <span class="openbtn">☰</span>
             </div>
-            <div class="pageContent">
-                <div class="searchBar">
-                    <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input id="usrsrc" type="text" class="form-control" value="Hae käyttäjää" placeholder="Search">
+            <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-height">
+                            <div class="aside">
+                            <!-- Navin avausnappi -->
+                            <span class="openbtn">☰</span>
+                            <!-- Käyttäjähaku -->
+                            <div class="searchBar">
+                                <form class="navbar-form navbar-left" role="search">
+                                    <div class="form-group">
+                                        <input id="usrsrc" type="text" class="form-control" value="Hae käyttäjää" placeholder="">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Hae</button>
+                                </form>
                         </div>
-                        <button type="submit" class="btn btn-default">Hae</button>
-                    </form>
-                    <!-- kalapaikka menu -->
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">
-                        Kalapaikkahaku
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Kalalajit<span id="kalapaikkatoggle">&nbsp;&nbsp;&nbsp;&nbsp;☰</span></a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="kalalaji" href="#">
-                                <span>Kuha<span id="kuha"> <input type="checkbox"></span></span>
-                                <span>Ahven<span id="ahven"> <input type="checkbox"></span></span>
-                                <span>Hauki<span id="hauki"> <input type="checkbox"></span></span>
-                                <span>Siika<span id="siika"> <input type="checkbox"></span></span>
-                                <br><br>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harjus<span id="Harjus"> <input type="checkbox"></span></span>
-                                <span>Lahna<span id="Lahna"> <input type="checkbox"></span></span>
-                                <span>Taimen<span id="Taimen"> <input type="checkbox"></span></span>
-                                <span>Lohi<span id="Lohi"> <input type="checkbox"></span></span>
-                                </a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Maakunnat<span id="maakuntatoggle">&nbsp;&nbsp;&nbsp;&nbsp;☰</span></a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="maakunta" href="#">
-                                <span>Ahvenanmaa<span id="ahvenanmaa"> <input type="checkbox"></span></span>
-                                <span>Etelä-Karjala<span id="etelakarjala"> <input type="checkbox"></span></span>
-                                <span>Etelä-Pohjanmaa<span id="etelapohjanmaa"> <input type="checkbox"></span></span>
-                                <span>Etelä-Savo<span id="etelasavo"> <input type="checkbox"></span></span>
-                                <br><br>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kainuu<span id="kainuu"> <input type="checkbox"></span></span>
-                                <span>Kanta-Häme<span id="kantahame"> <input type="checkbox"></span></span>
-                                <span>Keski-Pohjanmaa<span id="kpohjanmaa"> <input type="checkbox"></span></span>
-                                <span>Keski-Suomi<span id="keskisuomi"> <input type="checkbox"></span></span>
-                                <br><br>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kymenlaakso<span id="kymenlaakso"> <input type="checkbox"></span></span>
-                                <span>Lappi<span id="lappi"> <input type="checkbox"></span></span>
-                                <span>Päijät-Häme<span id="paijathame"> <input type="checkbox"></span></span>
-                                <span>Pirkanmaa<span id="pirkanmaa"> <input type="checkbox"></span></span>
-                                <br><br>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pohjanmaa<span id="pohjanmaa"> <input type="checkbox"></span></span>
-                                <span>Pohjois-Karjala<span id="pohjoiskarjala"> <input type="checkbox"></span></span>
-                                <span>Pohjois-Pohjanmaa<span id="pohjoispohjanmaa"> <input type="checkbox"></span></span>
-                                <span>Pohjois-Savo<span id="pohjoissavo"> <input type="checkbox"></span></span>
-                                <br><br>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Satakunta<span id="satakunta"> <input type="checkbox"></span></span>
-                                <span>Uusimaa<span id="uusimaa"> <input type="checkbox"></span></span>
-                                <span>Varsinais-Suomi<span id="kuha"> <input type="checkbox"></span></span>
-                                </a></li>
-                                <li role="separator" class="divider"></li>
-                                <button>Hae</button>
-                        </ul>
+                        </div>
                     </div>
+                    <!-- kalapaikka menu -->
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-height">
+                            <div class="aside">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">
+                            Kalapaikkafiltter
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Kalalajit<span id="kalapaikkatoggle">&nbsp;&nbsp;&nbsp;&nbsp;☰</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <!-- Kalafiltteri -->
+                                <li><a id="kalalaji" href="#">
+                                    <span>Kuha<span id="kuha"> <input type="checkbox"></span></span>
+                                    <span>Ahven<span id="ahven"> <input type="checkbox"></span></span>
+                                    <span>Hauki<span id="hauki"> <input type="checkbox"></span></span>
+                                    <span>Siika<span id="siika"> <input type="checkbox"></span></span>
+                                    <br><br>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harjus<span id="Harjus"> <input type="checkbox"></span></span>
+                                    <span>Lahna<span id="Lahna"> <input type="checkbox"></span></span>
+                                    <span>Taimen<span id="Taimen"> <input type="checkbox"></span></span>
+                                    <span>Lohi<span id="Lohi"> <input type="checkbox"></span></span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Maakunnat<span id="maakuntatoggle">&nbsp;&nbsp;&nbsp;&nbsp;☰</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <!-- maakunta filtter -->
+                                <li><a id="maakunta" href="#">
+                                    <span>Ahvenanmaa<span id="ahvenanmaa"> <input type="checkbox"></span></span>
+                                    <span>Etelä-Karjala<span id="etelakarjala"> <input type="checkbox"></span></span>
+                                    <span>Etelä-Pohjanmaa<span id="etelapohjanmaa"> <input type="checkbox"></span></span>
+                                    <span>Etelä-Savo<span id="etelasavo"> <input type="checkbox"></span></span>
+                                    <br><br>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kainuu<span id="kainuu"> <input type="checkbox"></span></span>
+                                    <span>Kanta-Häme<span id="kantahame"> <input type="checkbox"></span></span>
+                                    <span>Keski-Pohjanmaa<span id="kpohjanmaa"> <input type="checkbox"></span></span>
+                                    <span>Keski-Suomi<span id="keskisuomi"> <input type="checkbox"></span></span>
+                                    <br><br>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kymenlaakso<span id="kymenlaakso"> <input type="checkbox"></span></span>
+                                    <span>Lappi<span id="lappi"> <input type="checkbox"></span></span>
+                                    <span>Päijät-Häme<span id="paijathame"> <input type="checkbox"></span></span>
+                                    <span>Pirkanmaa<span id="pirkanmaa"> <input type="checkbox"></span></span>
+                                    <br><br>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pohjanmaa<span id="pohjanmaa"> <input type="checkbox"></span></span>
+                                    <span>Pohjois-Karjala<span id="pohjoiskarjala"> <input type="checkbox"></span></span>
+                                    <span>Pohjois-Pohjanmaa<span id="pohjoispohjanmaa"> <input type="checkbox"></span></span>
+                                    <span>Pohjois-Savo<span id="pohjoissavo"> <input type="checkbox"></span></span>
+                                    <br><br>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Satakunta<span id="satakunta"> <input type="checkbox"></span></span>
+                                    <span>Uusimaa<span id="uusimaa"> <input type="checkbox"></span></span>
+                                    <span>Varsinais-Suomi<span id="kuha"> <input type="checkbox"></span></span>
+                                    </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <button class="btn btn-default">Filtteröi</button>
+                            </ul>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="aside">
+                        <!-- Ilmoitusnamiska -->
+                        <button id="ilmoitukset" class="btn btn-default dropdown-toggle">Uudet!</button>
+                        <div id="ilmoituksetdiv" class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="aside">
+                            <ul><a href="#">Kahen kilon siika Jyväsjärvestä</a></ul>
+                            <ul><a href="#">Kolmen kilon siika Jyväsjärvestä</a></ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
                 </div>
                 <div id="map"></div>
             </div>

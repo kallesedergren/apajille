@@ -5,7 +5,7 @@ body {
     background:#f6f6f6;
 }
 #sidenavHolder {
-    width:250px;
+    width:15%;
     height:100%;
 }
 #otsikko {
@@ -13,28 +13,138 @@ body {
     font-weight:800;
     cursor:pointer;
 }
-#openButton {
+.openbtn {
+    cursor:pointer;
     position: absolute;
     top: 0;
     font-size: 36px;
     margin-left: 50px;
+    margin-top:5px;
 }
-/*#map {
-    border: solid 1px black;
-    width:60%;
-    height:700px;
-    margin-left:300px;
-}*/
+.closebtn {
+    cursor:pointer;
+}
+.searchBar {
+    margin-left:250px;
+    padding:5px;
+}
+.dropdown-toggle {
+    margin-top:15px;
+    float:right;
+}
+.dropdown-menu {
+    margin-top:55px;
+    width:500px;
+    padding:5px;
+}
+#kalalaji, #maakunta {
+    display:none;
+}
 
+#kalapaikkatoggle, #maakuntatoggle {
+    font-weight: 1000;
+}
+#ilmoitukset {
+    float:right;
+    margin-top:15px;
+    width:80px;
+    padding:5px;
+    background: #FFF;
+    border:solid 1px grey;
+    border-radius:3px;
+}
+
+#ilmoitukset span {
+    cursor:pointer;
+    margin-top:-5px;
+    font-size:16px;
+    padding:5px;
+}
+
+#ilmoituksetdiv {
+    width:300px;
+    height:200px;
+    margin-left:-100px;
+    overflow: hidden;
+    position:absolute;
+    z-index:1;
+    padding:5px;
+    background:#f6f6f6;
+    border:solid 1px grey;
+    border-radius:3px;
+    display:none;
+}
+
+#ilmoituksetdiv ul {
+    text-align:left;
+}
+#logout {
+    cursor:pointer;
+    text-decoration: underline;
+}
+#logoutconfirm {
+    display:none;
+}
+#logouty, #logoutn {
+    display:none;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+#map {
+    margin-top:70px;
+    border: solid 1px grey;
+    width:60%;
+    height:500px;
+    margin-left:250px;
+}
+/* Asetukset osio */
+#asetukset {
+    width:500px;
+    margin-left:300px;
+    padding:5px;
+}
+#kommentointi, #vierailijat, #kalapaikat, #muokkaus, #poisto {
+    width:150px;
+    height:50px;
+    margin-top:20px;
+    background:grey;
+    padding:5px;
+    text-align:center;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+#muokkaus{
+    margin-top:90px;
+}
+#muokkausdiv {
+    display:none;
+    width:300px;
+    height:400px;
+    margin-left:300px;
+    margin-top:-500px;
+}
+#muokkausdiv input {
+    margin-top:20px;
+    width:210px;
+    text-align:center;
+    border-radius:2px;
+}
+#muokkausdiv button {
+    width:100px;
+    padding:5px;
+    margin-left:;
+    margin-top:20px;
+}
 /* The side navigation menu */
 .sidenavnobs {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 250px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
+    background-color: #f6f6f6; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -44,8 +154,8 @@ body {
 .sidenavnobs a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: black;
     display: block;
     transition: 0.3s
 }
